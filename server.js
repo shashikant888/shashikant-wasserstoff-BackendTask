@@ -2,12 +2,12 @@ const express = require("express");
 const config = require("./config/config");
 const apiRoutes = require("./routes/apiRoutes");
 const queueRoutes = require("./routes/queueRoutes");
-const logger = require("./utils/logger");
+// const logger = require("./utils/logger");
 
 const app = express();
 
 app.use(express.json());
-app.use(logger);
+// app.use(logger);
 
 // Mock APIs
 app.get(config.apiEndpoints.fast, (req, res) => {
@@ -26,7 +26,7 @@ app.get(config.apiEndpoints.random, (req, res) => {
 app.use("/api", apiRoutes);
 app.use("/queue", queueRoutes);
 
-app.get("/hello", (req, res) => {
+app.get("/", (req, res) => {
   res.status(200).json({
     success: true,
     message: "Hello Bro !!",

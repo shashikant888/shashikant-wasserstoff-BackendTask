@@ -6,3 +6,7 @@ Method: GET, URL: /api/slow, Duration: 2004 ms
 Method: POST, URL: /api/route, Duration: 2017 ms
 Method: GET, URL: /api/random, Duration: 1744 ms
 Method: POST, URL: /api/route, Duration: 1754 ms
+Method: GET, URL: /, Duration: 24 ms
+Method: GET, URL: /, Duration: 4 ms
+Method: GET, URL: /queue/process, Duration: 5 ms
+Method: GET, URL: /, Duration: 6 ms
