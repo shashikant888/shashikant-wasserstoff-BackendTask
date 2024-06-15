@@ -1,0 +1,8 @@
+Method: GET, URL: /api/fast, Duration: 120 ms
+Method: POST, URL: /api/route, Duration: 182 ms
+Method: POST, URL: /queue/enqueue, Duration: 2 ms
+Method: GET, URL: /queue/process, Duration: 3 ms
+Method: GET, URL: /api/slow, Duration: 2004 ms
+Method: POST, URL: /api/route, Duration: 2017 ms
+Method: GET, URL: /api/random, Duration: 1744 ms
+Method: POST, URL: /api/route, Duration: 1754 ms
