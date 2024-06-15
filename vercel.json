@@ -1,19 +1,24 @@
 {
   "version": 2,
-  "builds": [{ "src": "server.js", "use": "@vercel/node" }],
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@vercel/node",
+      "build": "npm run build"
+    }
+  ],
   "routes": [
     {
       "src": "/api/route",
-      "dest": "/server.js"
+      "dest": "/api/route.js"
     },
     {
       "src": "/queue/enqueue",
-      "dest": "/server.js"
+      "dest": "/queue/enqueue.js"
     },
     {
       "src": "/queue/process",
-      "dest": "/server.js"
+      "dest": "/queue/process.js"
     }
-  ],
-  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+  ]
 }
