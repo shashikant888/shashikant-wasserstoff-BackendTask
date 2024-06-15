@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "builds": [{ "src": "server.js", "use": "@vercel/node" }],
+  "routes": [
+    {
+      "src": "/api/route",
+      "dest": "/server.js"
+    },
+    {
+      "src": "/queue/enqueue",
+      "dest": "/server.js"
+    },
+    {
+      "src": "/queue/process",
+      "dest": "/server.js"
+    }
+  ]
+}
