@@ -49,6 +49,8 @@ wasserstoff-load-balancer/
     ```
 
     The server will run on http://localhost:3000.
+                      or
+    The server will run on https://wasserstoff-load-balancer.vercel.app.
 
 ## API Endpoints
 
